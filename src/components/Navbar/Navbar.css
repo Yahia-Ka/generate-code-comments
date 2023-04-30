@@ -1,0 +1,83 @@
+nav {
+  display: flex;
+  width: 100vw;
+  background: #1d1e21;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.2px 0 0 rgb(57, 54, 54);
+}
+.nav-container {
+  position: relative;
+  display: flex;
+  margin: 0 150px 0 150px;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.5rem;
+  max-width: 1140px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.brand {
+  font-size: 20pt;
+  color: #c0c0c0fb;
+  font-weight: 700;
+  line-height: 0.5;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .brand {
+    font-size: 15pt;
+    color: #c0c0c0fb;
+    font-weight: 700;
+    line-height: 0.5;
+    text-transform: capitalize;
+  }
+
+  .nav-container {
+    position: relative;
+    display: flex;
+    margin: 0 50px 0 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 36px;
+  }
+  .brand {
+    font-size: 14pt;
+    color: #c0c0c0fb;
+    font-weight: 700;
+    line-height: 0.5;
+    text-transform: capitalize;
+  }
+  .nav-container {
+    position: relative;
+    display: flex;
+    margin: 0 20px 0 20px;
+  }
+  .nav-icons {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav-icons {
+    display: none;
+  }
+}

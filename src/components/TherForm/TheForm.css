@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+form {
+  width: 90vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  /* max-width: 1280px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px calc(40px) 10px;
+  width: 80vw;
+  height: 30vh;
+  padding: 1rem;
+  text-align: left;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-shadow: 0 0.5px 0px 0.5px;
+  font-family: monospace;
+  overflow: auto;
+}
+.input:hover {
+  filter: drop-shadow(0 0 3px #1e3e2c);
+}
+
+.label {
+  width: 80vw;
+  height: auto;
+  font-family: Raleway;
+  font-size: small;
+}
+.error {
+  color: #fa494c;
+  padding: 20px;
+  font-size: 12pt;
+  font-family: monospace;
+}
+
+@media screen and (max-width: 768px) {
+  .error-msg,
+  .label {
+    font-size: 8pt;
+  }
+  .get-code-btn {
+    font-size: 9pt;
+  }
+}

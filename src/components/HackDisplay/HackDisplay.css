@@ -1,0 +1,54 @@
+.wrapper {
+  display: "flex";
+  justify-content: "center";
+  align-items: "center";
+  height: max-content;
+  width: 80vw;
+  /* padding: 8px;s */
+
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+
+.animated-text {
+  /* background-color: #009; */
+  /* word-break: break-all; */
+  width: auto;
+  color: #01ff01;
+  padding: 4px;
+  font-family: monospace;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  animation-name: rightToLeft;
+  animation-duration: 14s;
+  animation-timing-function: linear;
+  animation-iteration-count: 10;
+}
+
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(80vw);
+  }
+  100% {
+    transform: translateX(-80vw);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .animated-text {
+    width: auto;
+    font-family: monospace;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    animation-duration: 12s;
+  }
+}
+@media screen and (max-width: 768px) {
+  .animated-text {
+    width: auto;
+    font-size: 0.6rem;
+    animation-duration: 8s;
+  }
+}
